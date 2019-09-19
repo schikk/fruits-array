@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Fruits array</title>
+	</head>
+	<body class="home">
+		<main class="main-content"></main>
+    <script>
+    	const fruits = ['Banana', 'Apple', 'Orange', 'Lemon'];
+    	let frutListComponent = '<ol class="fruits-list">';
+    	let findIndex = fruits.indexOf('Apple');
+    	fruits[fruits.indexOf('Apple')] = 'Only Apple';
+		fruits.forEach(function(i) {
+		  frutListComponent += '<li>'+ i + '</li>';
+		});
+		document.querySelector('.main-content').innerHTML = frutListComponent;
+    </script>
+	</body>
+</html>
