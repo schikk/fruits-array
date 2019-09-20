@@ -11,7 +11,7 @@
     	const fruits = ['Banana', 'Apple', 'Orange', 'Lemon'];
     	let frutListComponent = '<ol class="fruits-list">';
     	let findIndex = fruits.indexOf('Apple');
-    	fruits[fruits.indexOf('Apple')] = 'Only Apple';
+    	fruits[findIndex] = 'Only Apple';
 		fruits.forEach(function(i) {
 		  frutListComponent += '<li>'+ i + '</li>';
 		});
